@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shark App</title>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        background: #e5e7e9;
+      }
+     
+      .sidebar {
+        background: #f3f5f7;
+        height: 100%;
+        width: 250px;
+        border-radius: 18px 0px 0px 18px;
+        margin-left: 40px;
+        margin-top: 20px;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .inbox{
+        width: 450px;
+        height: 100%;
+        border-right: 1px solid rgb(175, 168, 168);
+      }
+      main{
+        height: 100%;
+        display: flex;
+        position: absolute;
+        left: 250px;
+      }
+      .list{
+        list-style-type: none;
+      }
+      .chat{
+        height: 100%;
+        width: 1050px;
+      }
+      .panel{
+        height: 100%;
+        width: 60px;
+        background: white;
+        border-radius: 0px 18px 18px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <h2><i class="las la-cube"></i>Shark</h2>
+      <ul class="list">
+        <li><i class="las la-stop"></i>Dashboard</li>
+        <li><i class="las la-chart-bar"></i>Statistic</li>
+        <li><i class="lab la-rocketchat"></i>Support</li>
+        <li><i class="las la-inbox"></i>Inbox</li>
+        <li><i class="las la-rocket"></i>Goals</li>
+        <li><i class="las la-link"></i>Links</li>
+
+    
+      </ul>
+    </aside>
+    <main>
+        <div class="inbox"></div>
+        <div class="chat">
+            <section>
+
+            </section>
+        </div>
+        <div class="panel"></div>
+    </main>
+  </body>
+</html>
