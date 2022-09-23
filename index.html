@@ -27,7 +27,7 @@
       .sidebar {
         background: #f3f5f7;
         height: 90%;
-        width: 250px;
+        width: 15%;
         border-radius: 18px 0px 0px 18px;
         margin-left: 40px;
         margin-top: 5vh;
@@ -42,15 +42,16 @@
       .main {
         height: 90%;
         display: flex;
-        position: absolute;
-        left: 250px;
         margin-top: 5vh;
+        left: 15%;
+        position: fixed;
       }
       .inbox {
         width: 450px;
         height: 100%;
         border-right: 1px solid rgb(175, 168, 168);
         background: white;
+        
       }
       .inbox__header {
         width: 450px;
@@ -171,7 +172,7 @@
         </section>
         <section class="inbox__switcher">
           <button>General</button> 
-          <button>Total</button>
+          <button>Total </button>
         </section>
         <section class="inbox__contacts"></section>
       </div>
@@ -195,8 +196,16 @@
           </button>
           <button class="main__button"><i class="las la-video"></i></button>
         </div>
-        <div class="main__chat"></div>
+        <div class="main__chat">
+          <p>July 29, Tuesday</p>
+          <p class="main__time">12:25</p>
+          <p class="main__time">12:28</p>
+          <p class="main__time">12:29</p>
+          <p class="main__time">12:30</p>
+        </div>
       </div>
+
+
       <div class="main__panel">
         <button class="main__button">..</button>
         <button class="main__button">
