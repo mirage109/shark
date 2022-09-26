@@ -42,9 +42,14 @@
         margin-bottom: 3vh;
         font-weight: 600;
       }
-      .sidebar__projects{
+      .sidebar__projects {
         padding-left: 2vw;
         list-style-type: none;
+      }
+      .sidebar__button {
+        height: 5%;
+        width: 80%;
+        border-radius: 10px;
       }
       .main {
         height: 100vh;
@@ -57,7 +62,7 @@
       .inbox {
         width: 30%;
         height: 100vh;
-        border-right: 1px solid rgb(175, 168, 168);
+        border-right: 1px solid #e5e7e9;
         background: white;
       }
       .inbox__header {
@@ -84,23 +89,19 @@
         border-radius: 10px;
         display: flex;
         justify-content: space-between;
-
       }
-      .inbox__button{
-       width: 49%;
-       height: 96%;
-       background: white;
-       border: none;
-       border-radius: 10px;
-      
+      .inbox__button {
+        width: 49%;
+        height: 96%;
+        background: white;
+        border: none;
+        border-radius: 10px;
       }
       .inbox__contacts {
         height: 80%;
         width: 100%;
         padding-left: 2vw;
         padding-right: 2vw;
-        
-
       }
       .inbox__user {
         height: calc(90% / 7);
@@ -124,7 +125,7 @@
       }
       .main__header {
         height: 12%;
-        border-bottom: 1px solid rgb(175, 168, 168);
+        border-bottom: 1px solid #e5e7e9;
         background: #fafafa;
         align-items: center;
         display: flex;
@@ -139,6 +140,7 @@
         border-radius: 10px;
         border: 2px solid #e5e7e9;
         width: 300px;
+        height: 50px;
       }
       .search__input {
         border: none;
@@ -167,16 +169,22 @@
         border-radius: 10px;
         border: 2px solid #e5e7e9;
         font-size: 2rem;
+        margin: 0.5rem;
+        color: gray;
       }
-      .main__button--blue{
+      .main__button--blue {
         background: #4a6adb;
       }
       .main__panel {
         height: 100vh;
         width: 5%;
+        padding-left: 0.5rem;
+        padding-top: 1.5rem;
         background: white;
-        border-left: 1px solid rgb(175, 168, 168);
-        padding: 20px;
+        border-left: 1px solid #e5e7e9;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
       .main__user {
         display: flex;
@@ -186,11 +194,18 @@
       .main__message {
         height: 10%;
         background: white;
-        border-top: 1px solid #bebebe;
+        border-top: 1px solid #e5e7e9;
       }
       .main__messagetype {
         height: 100%;
         width: 75%;
+      }
+      .main__messagetype {
+        border: none;
+      }
+      .main__search{
+        display: flex;
+        align-items: center;
       }
     </style>
   </head>
@@ -245,21 +260,25 @@
       <div class="main__wrapper">
         <div class="main__header">
           <div class="main__user">
-            <img src="https://via.placeholder.com/42" alt="" />
+            <img src="https://via.placeholder.com/42" alt="" /><i
+              class="las la-circle"
+            ></i>
             <h4>Michael</h4>
             <h5>online</h5>
           </div>
-          <div class="search">
-            <input class="search__input" type="text" placeholder="Search.." />
-            <span class="search__icon">
-              <i class="las la-search"></i>
-            </span>
-          </div>
+          <div class="main__search">
+            <div class="search">
+              <input class="search__input" type="text" placeholder="Search.." />
+              <span class="search__icon">
+                <i class="las la-search"></i>
+              </span>
+            </div>
 
-          <button class="main__button">
-            <i class="las la-microphone"></i>
-          </button>
-          <button class="main__button"><i class="las la-video"></i></button>
+            <button class="main__button">
+              <i class="las la-microphone"></i>
+            </button>
+            <button class="main__button"><i class="las la-video"></i></button>
+          </div>
         </div>
         <div class="main__chat">
           <p class="main__date">July 29, Tuesday</p>
@@ -268,9 +287,11 @@
           <div class="main__message main__message--outcome">voice 00:16</div>
           <p class="main__time">12:28</p>
           <div class="main__message main__message--income">Hi</div>
-          <div> voice 00:08</div>
+          <div>voice 00:08</div>
           <p class="main__time">12:29</p>
-          <div class="main__message main__message--outcome">Okay, thank you much for the speed</div>
+          <div class="main__message main__message--outcome">
+            Okay, thank you much for the speed
+          </div>
           <p class="main__time">12:30</p>
           <div class="main__message main__message--income">Catch</div>
           <div class="main__message main__message--income">File</div>
@@ -292,12 +313,14 @@
       </div>
 
       <div class="main__panel">
-        <button class="main__button">..</button>
-        <button class="main__button">
-          <i class="las la-exclamation-circle"></i>
-        </button>
-        <button class="main__button"><i class="las la-bell"></i></button>
-        <button class="main__button"><i class="las la-trash-alt"></i></button>
+        <div><button class="main__button">..</button></div>
+        <div>
+          <button class="main__button">
+            <i class="las la-exclamation-circle"></i>
+          </button>
+          <button class="main__button"><i class="las la-bell"></i></button>
+          <button class="main__button"><i class="las la-trash-alt"></i></button>
+        </div>
       </div>
     </main>
   </body>
