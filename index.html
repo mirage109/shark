@@ -35,7 +35,7 @@
       }
       .sidebar__navigation {
         list-style-type: none;
-        height: 50%;
+        height: 45%;
         padding-left: 2vw;
       }
       .sidebar__li {
@@ -46,10 +46,15 @@
         padding-left: 2vw;
         list-style-type: none;
       }
+      .sidebar__h2{
+        padding: 1rem 2rem 1rem 2rem;
+      }
       .sidebar__button {
         height: 5%;
         width: 80%;
         border-radius: 10px;
+        margin: 2rem;
+        border: 2px solid #e5e7e9;
       }
       .main {
         height: 100vh;
@@ -96,6 +101,7 @@
         background: white;
         border: none;
         border-radius: 10px;
+        
       }
       .inbox__contacts {
         height: 80%;
@@ -220,12 +226,12 @@
         <li class="sidebar__li"><i class="las la-rocket"></i>Goals</li>
         <li class="sidebar__li"><i class="las la-link"></i>Links</li>
       </ul>
-      <h3>PROJECTS</h3>
+      <h3 class="sidebar__h2">PROJECTS</h3>
       <ul class="sidebar__projects">
-        <li>Callipso</li>
-        <li>BWS bank</li>
-        <li>Unicorn app</li>
-        <li>Salt</li>
+        <li class="sidebar__li"><i class="las la-circle"></i>Callipso</li>
+        <li class="sidebar__li"><i class="las la-circle"></i>BWS bank</li>
+        <li class="sidebar__li"><i class="las la-circle"></i>Unicorn app</li>
+        <li class="sidebar__li"><i class="las la-circle"></i>Salt</li>
       </ul>
       <button class="sidebar__button">Show more</button>
     </aside>
