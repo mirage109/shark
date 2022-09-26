@@ -39,14 +39,21 @@
         padding-left: 2vw;
       }
       .sidebar__li {
-        margin-bottom: 3vh;
-        font-weight: 600;
+       padding: 1.5vh 0vh 1.5vh 0vh;
+      font-weight: 600;
+      }
+      .sidebar__li--isblue {
+        color: #4a6adb;
+        background: white;
+        border-radius: 10px 0px 0px 10px;
+        border-right: 4px solid #f26643;
+
       }
       .sidebar__projects {
         padding-left: 2vw;
         list-style-type: none;
       }
-      .sidebar__h2{
+      .sidebar__h2 {
         padding: 1rem 2rem 1rem 2rem;
       }
       .sidebar__button {
@@ -101,7 +108,6 @@
         background: white;
         border: none;
         border-radius: 10px;
-        
       }
       .inbox__contacts {
         height: 80%;
@@ -209,7 +215,7 @@
       .main__messagetype {
         border: none;
       }
-      .main__search{
+      .main__search {
         display: flex;
         align-items: center;
       }
@@ -222,7 +228,7 @@
         <li class="sidebar__li"><i class="las la-stop"></i>Dashboard</li>
         <li class="sidebar__li"><i class="las la-chart-bar"></i>Statistic</li>
         <li class="sidebar__li"><i class="lab la-rocketchat"></i>Support</li>
-        <li class="sidebar__li"><i class="las la-inbox"></i>Inbox</li>
+        <li class="sidebar__li sidebar__li--isblue"><i class="las la-inbox"></i>Inbox</li>
         <li class="sidebar__li"><i class="las la-rocket"></i>Goals</li>
         <li class="sidebar__li"><i class="las la-link"></i>Links</li>
       </ul>
