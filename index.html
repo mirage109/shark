@@ -40,15 +40,14 @@
         padding-left: 2vw;
       }
       .sidebar__li {
-       padding: 1.5vh 0vh 1.5vh 0vh;
-      font-weight: 600;
+        padding: 1.5vh 0vh 1.5vh 0vh;
+        font-weight: 600;
       }
       .sidebar__li--isblue {
         color: #4a6adb;
         background: white;
         border-radius: 10px 0px 0px 10px;
         border-right: 4px solid #f26643;
-
       }
       .sidebar__projects {
         padding-left: 2vw;
@@ -192,6 +191,8 @@
       .main__panel {
         height: 100vh;
         width: 5%;
+        right: 0;
+        position: fixed;
         padding-left: 0.5rem;
         padding-top: 1.5rem;
         background: white;
@@ -212,10 +213,11 @@
       }
       .main__messagetype {
         height: 100%;
-        width: 75%;
-      }
-      .main__messagetype {
+        width: 70%;
         border: none;
+        outline: none;
+        font-weight: 600;
+        font-size: large;
       }
       .main__search {
         display: flex;
@@ -230,7 +232,9 @@
         <li class="sidebar__li"><i class="las la-stop"></i>Dashboard</li>
         <li class="sidebar__li"><i class="las la-chart-bar"></i>Statistic</li>
         <li class="sidebar__li"><i class="lab la-rocketchat"></i>Support</li>
-        <li class="sidebar__li sidebar__li--isblue"><i class="las la-inbox"></i>Inbox</li>
+        <li class="sidebar__li sidebar__li--isblue">
+          <i class="las la-inbox"></i>Inbox
+        </li>
         <li class="sidebar__li"><i class="las la-rocket"></i>Goals</li>
         <li class="sidebar__li"><i class="las la-link"></i>Links</li>
       </ul>
@@ -296,17 +300,17 @@
         </div>
         <div class="main__chat">
           <p class="main__date">July 29, Tuesday</p>
-          <p class="main__time">12:25</p>
+          <time class="main__time">12:25</time>
           <div class="main__message main__message--outcome">Hello</div>
           <div class="main__message main__message--outcome">voice 00:16</div>
-          <p class="main__time">12:28</p>
+          <time class="main__time">12:28</time>
           <div class="main__message main__message--income">Hi</div>
           <div>voice 00:08</div>
-          <p class="main__time">12:29</p>
+          <time class="main__time">12:29</time>
           <div class="main__message main__message--outcome">
             Okay, thank you much for the speed
           </div>
-          <p class="main__time">12:30</p>
+          <time class="main__time">12:30</time>
           <div class="main__message main__message--income">Catch</div>
           <div class="main__message main__message--income">File</div>
         </div>
@@ -314,7 +318,7 @@
           <input
             class="main__messagetype"
             type="text"
-            placeholder="Write a message..."
+            placeholder="  Write a message..."
           />
           <button class="main__button"><i class="las la-image"></i></button>
           <button class="main__button">
