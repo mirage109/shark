@@ -22,12 +22,12 @@
       }
       .sidebar {
         height: 100vh;
-        width: 15%;
+        width: 285px;
         background: #f3f5f7;
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 1000;
+        z-index: 3;
       }
       .sidebar__logo {
         height: 12%;
@@ -67,7 +67,7 @@
         height: 100vh;
         width: 85%;
         display: flex;
-        left: 15%;
+        left: 285px;
         background: pink;
         position: relative;
       }
@@ -145,7 +145,7 @@
         padding-right: 2vh;
       }
       .search {
-        background: transparent;
+        background: #f3f5f7;
         display: flex;
         align-items: center;
         padding-left: 0.5rem;
@@ -172,7 +172,9 @@
       }
       .main__chat {
         height: 78%;
-        background: #fafafa;
+        background: linear-gradient(to right, #ffffff, #f4f6f8);
+        display: flex;
+        flex-direction: column;
       }
       .main__button {
         width: 50px;
@@ -195,6 +197,7 @@
         position: fixed;
         padding-left: 0.5rem;
         padding-top: 1.5rem;
+        padding-bottom: 1rem;
         background: white;
         border-left: 1px solid #e5e7e9;
         display: flex;
@@ -206,22 +209,61 @@
         align-items: center;
         margin-left: 40px;
       }
-      .main__message {
+      .main__sendmessage {
         height: 10%;
-        background: white;
+        background: #f4f6f8;
         border-top: 1px solid #e5e7e9;
       }
-      .main__messagetype {
+      .main__sendmessagetype {
         height: 100%;
         width: 70%;
         border: none;
         outline: none;
         font-weight: 600;
         font-size: large;
+        background: #f4f6f8;
       }
       .main__search {
         display: flex;
         align-items: center;
+      }
+      .la-cube {
+        color: #4a6adb;
+        font-size: 2.5rem;
+      }
+      .main__message {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        width: max-content;
+        height: max-content;
+      }
+      .main__message--income {
+        background: #edeeee;
+        border-radius: 10px 10px 10px 0px;
+        margin-left: 2rem;
+      }
+      .main__message--outcome {
+        background: white;
+        border-radius: 10px 10px 0px 10px;
+        margin-left: auto;
+        margin-right: 2rem;
+      }
+      .main__date {
+        color: grey;
+        font-weight: 600;
+        margin-left: 2rem;
+      }
+      .main__time {
+        font-size: smaller;
+        font-weight: 600;
+        color: grey;
+        margin-left: 2rem;
+        padding-bottom: 0.4rem;
+      }
+      .main__time--outcome {
+        margin-left: auto;
+        margin-right: 2.1rem;
       }
     </style>
   </head>
@@ -300,23 +342,37 @@
         </div>
         <div class="main__chat">
           <p class="main__date">July 29, Tuesday</p>
-          <time class="main__time">12:25</time>
+          <time class="main__time main__time--outcome">12:25</time>
           <div class="main__message main__message--outcome">Hello</div>
-          <div class="main__message main__message--outcome">voice 00:16</div>
+          <div class="main__message main__message--outcome">
+            <img src="img/Screenshot_1.png" />
+          </div>
           <time class="main__time">12:28</time>
           <div class="main__message main__message--income">Hi</div>
-          <div>voice 00:08</div>
-          <time class="main__time">12:29</time>
+          <div class="main__message main__message--income">
+            <img src="img/Screenshot_4.png" />
+          </div>
+          <time class="main__time main__time--outcome">12:29</time>
           <div class="main__message main__message--outcome">
             Okay, thank you much for the speed
           </div>
           <time class="main__time">12:30</time>
           <div class="main__message main__message--income">Catch</div>
-          <div class="main__message main__message--income">File</div>
+          <div class="main__message main__message--income">
+            <img src="img/Screenshot_2.png" />
+          </div>
+          <div class="main__message main__message--income">One more</div>
+          <div class="main__message main__message--income">
+            <img src="img/Screenshot_2.png" />
+          </div>
+          <div class="main__message main__message--income">One more</div>
+          <div class="main__message main__message--income">
+            <img src="img/Screenshot_2.png" />
+          </div>
         </div>
-        <div class="main__message">
+        <div class="main__sendmessage">
           <input
-            class="main__messagetype"
+            class="main__sendmessagetype"
             type="text"
             placeholder="  Write a message..."
           />
