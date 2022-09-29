@@ -116,12 +116,32 @@
         padding-right: 2vw;
       }
       .inbox__user {
-        height: calc(90% / 7);
-        background: grey;
+        height: calc(90% / 6.5);
         margin-bottom: 15px;
         border-radius: 10px;
+        display: grid;
+        grid-template-columns: 30% auto;
       }
-
+      .inbox__user--unread {
+        background: #f3f5f7;
+        grid-template-columns: 30% auto 30%;
+      }
+      .user__description {
+        background: transparent;
+        padding: 1.5rem 0.5rem 1rem 0.5rem;
+      }
+      figure {
+        margin: 0;
+        line-height: 0;
+      }
+      .user__avatar {
+        object-fit: cover;
+        padding: 12% 10% 10% 15%;
+        width: 85%;
+      }
+      .user__h6{
+        color: lightslategray;
+      }
       .inbox__contacts,
       .main__chat {
         overflow-y: scroll;
@@ -300,20 +320,164 @@
           <button class="inbox__button">Total</button>
         </section>
         <section class="inbox__contacts">
-          <div class="inbox__user"></div>
-          <div class="inbox__user"></div>
-          <div class="inbox__user"></div>
-          <div class="inbox__user"></div>
-          <div class="inbox__user"></div>
-          <div class="inbox__user"></div>
-          <div class="inbox__user"></div>
-          <div class="inbox__user"></div>
-          <div class="inbox__user"></div>
-          <div class="inbox__user"></div>
-          <div class="inbox__user"></div>
-          <div class="inbox__user"></div>
-          <div class="inbox__user"></div>
-          <div class="inbox__user"></div>
+          <div class="inbox__user inbox__user--unread">
+            <figure>
+              <img class="user__avatar" src="img/146031.png" />
+              <div class="user__online"></div>
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6>Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+            <div class="user__indicator"></div>
+          </div>
+          <div class="inbox__user inbox__user--unread">
+            <figure>
+              <img class="user__avatar" src="img/219988.png" />
+              <div class="user__online"></div>
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6>Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+            <div class="user__indicator"></div>
+          </div>
+          <div class="inbox__user">
+            <figure>
+              <img class="user__avatar" src="img/219989.png" />
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6>Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+          </div>
+          <div class="inbox__user">
+            <figure>
+              <img class="user__avatar" src="img/images.png" />
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6>Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+          </div>
+          <div class="inbox__user">
+            <figure>
+              <img class="user__avatar" src="img/219988.png" />
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6>Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+          </div>
+          <div class="inbox__user">
+            <figure>
+              <img class="user__avatar" src="img/219988.png" />
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6 class="user__h6">Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+          </div>
+          <div class="inbox__user">
+            <figure>
+              <img class="user__avatar" src="img/219988.png" />
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6 class="user__h6">Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+          </div>
+          <div class="inbox__user">
+            <figure>
+              <img class="user__avatar" src="img/images.png" />
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6>Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+          </div>
+          <div class="inbox__user">
+            <figure>
+              <img class="user__avatar" src="img/219988.png" />
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6>Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+          </div>
+          <div class="inbox__user">
+            <figure>
+              <img class="user__avatar" src="img/219988.png" />
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6 class="user__h6">Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+          </div>
+          <div class="inbox__user">
+            <figure>
+              <img class="user__avatar" src="img/219988.png" />
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6>Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+          </div>
+          <div class="inbox__user">
+            <figure>
+              <img class="user__avatar" src="img/219988.png" />
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6>Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+          </div>
+          <div class="inbox__user">
+            <figure>
+              <img class="user__avatar" src="img/219988.png" />
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6>Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+          </div>
+          <div class="inbox__user">
+            <figure>
+              <img class="user__avatar" src="img/219988.png" />
+            </figure>
+
+            <div class="user__description">
+              <h2>Michael B.</h2>
+              <h6>Project manager</h6>
+              <h4>Sent you file</h4>
+            </div>
+          </div>
         </section>
       </div>
 
